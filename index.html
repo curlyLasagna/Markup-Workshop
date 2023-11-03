@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Markup Languages: Power of Plain Text</title>
+<meta name="author" content="Luis Gascon"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/league.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/zenburn.css"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Markup Languages: Power of Plain Text</h1>
+</section>
+<section>
+<section id="slide-orgd0bb9b0">
+<h2 id="orgd0bb9b0">What are markup languages?</h2>
+<p>
+According to Wikipedia:
+</p>
+<blockquote>
+<p>
+Set of symbols inserted in a text document to control its structure, formatting&#x2026;
+</p>
+</blockquote>
+</section>
+<section>
+<p>
+Markup languages allows you to focus more on the content instead of the design
+</p>
+
+<p>
+Design can be delegated by a different process
+</p>
+<aside class="notes">
+<p>
+Ask if they can name examples of markup languages
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-orgea1aa57">
+<h2 id="orgea1aa57">Popular markup languages</h2>
+<ul>
+<li class="fragment appear">Markdown</li>
+<li class="fragment appear">HTML</li>
+<li class="fragment appear">\(\LaTeX\)</li>
+<li class="fragment appear"><a href="https://typst.app/">Typst</a></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+This slide is written with Org, but I don&rsquo;t recommend it since it&rsquo;s not usually outside of Emacs.
+Ask if people have had to write their assignments in LaTeX or are taking classes for it
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-orga2c7fbe">
+<h2 id="orga2c7fbe">\(\LaTeX\)</h2>
+<p>
+Try <a href="https://www.overleaf.com/">Latex</a> via Overleaf
+</p>
+
+<p>
+Many university professors use \(\LaTeX\)
+</p>
+<aside class="notes">
+<p>
+Ask if anyone has had to write LaTeX and their experience doing so
+Show examples of documents you&rsquo;ve created
+</p>
+
+</aside>
+</section>
+<section id="slide-orgda725bf">
+<h3 id="orgda725bf">Documents you can create</h3>
+<ul>
+<li class="fragment appear">Resumes</li>
+<li class="fragment appear">Reports</li>
+<li class="fragment appear">Math proofs</li>
+
+</ul>
+</section>
+<section>
+
+<div id="org80e2a2a" class="figure">
+<p><img src="./Screenshot 2023-11-03 at 11.38.09 AM.jpg" alt="Screenshot 2023-11-03 at 11.38.09 AM.jpg" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org3b90c2c">
+<h2 id="org3b90c2c">Typst</h2>
+<p>
+A modern alternative to \(\LaTeX\)
+</p>
+
+<aside class="notes">
+<p>
+Do a side by side comparison of a Typst document and a LaTeX one
+Also show the source code of each to compare the syntax
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org757fa47">
+<h2 id="org757fa47">Markdown</h2>
+<div class="outline-text-2" id="text-org757fa47">
+</div>
+</section>
+<section id="slide-orge2993e4">
+<h3 id="orge2993e4">Popular applications that use Markdown</h3>
+<ul>
+<li>Reddit</li>
+<li>Obsidian</li>
+<li>Discord</li>
+<li>VsCode</li>
+
+</ul>
+</section>
+<section id="slide-org08168df">
+<h3 id="org08168df">Reddit</h3>
+<p>
+Reddit has its own <a href="https://www.reddit.com/wiki/markdown/">flavor</a> of Markdown
+</p>
+</section>
+<section id="slide-org9af4d4e">
+<h3 id="org9af4d4e">Discord</h3>
+<p>
+Discord supports some markdown
+</p>
+<aside class="notes">
+<p>
+Send this message on discord
+</p>
+
+<p>
+```python
+def _<sub>str</sub>_<sub>(self)</sub> -&gt; str:
+    return f&ldquo;{self.process<sub>id</sub>}\t\t{self.arrival_time}\t\t{self.burst_time}&rdquo;
+</p>
+
+<p>
+def _<sub>lt</sub>_<sub>(self, other)</sub>:
+    return self.burst<sub>time</sub> &lt; other.burst<sub>time</sub>
+</p>
+
+<p>
+def _<sub>hash</sub>_<sub>(self)</sub>:
+    return hash(self._<sub>repr</sub>_<sub>()</sub>)
+```
+&gt; I can&rsquo;t code
+</p>
+
+</aside>
+</section>
+<section id="slide-orgeea3e26">
+<h3 id="orgeea3e26">Spicing up your Github profile</h3>
+<ol>
+<li>Create a repository and name it as your</li>
+<li>Create and edit README.md within the repository</li>
+
+</ol>
+
+<p>
+There&rsquo;s no need to commit the changes. You can simply preview the changes
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+transition: 'convex',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealNotes, RevealHighlight, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
