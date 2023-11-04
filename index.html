@@ -20,8 +20,8 @@
 <h1 class="title">Markup Languages: Power of Plain Text</h1>
 </section>
 <section>
-<section id="slide-orgd0bb9b0">
-<h2 id="orgd0bb9b0">What are markup languages?</h2>
+<section id="slide-orgfdfa6e7">
+<h2 id="orgfdfa6e7">What are markup languages?</h2>
 <p>
 According to Wikipedia:
 </p>
@@ -48,8 +48,8 @@ Ask if they can name examples of markup languages
 </section>
 </section>
 <section>
-<section id="slide-orgea1aa57">
-<h2 id="orgea1aa57">Popular markup languages</h2>
+<section id="slide-org17aae65">
+<h2 id="org17aae65">Popular markup languages</h2>
 <ul>
 <li class="fragment appear">Markdown</li>
 <li class="fragment appear">HTML</li>
@@ -68,15 +68,15 @@ Ask if people have had to write their assignments in LaTeX or are taking classes
 </section>
 </section>
 <section>
-<section id="slide-orga2c7fbe">
-<h2 id="orga2c7fbe">\(\LaTeX\)</h2>
-<p>
-Try <a href="https://www.overleaf.com/">Latex</a> via Overleaf
-</p>
+<section id="slide-orge0a5719">
+<h2 id="orge0a5719">\(\LaTeX\)</h2>
+<ul>
+<li>High usage in Academia</li>
+<li>Defacto standard for research documents as it looks professional</li>
+<li>One of the most advanced math typsetting system</li>
 
-<p>
-Many university professors use \(\LaTeX\)
-</p>
+</ul>
+
 <aside class="notes">
 <p>
 Ask if anyone has had to write LaTeX and their experience doing so
@@ -85,28 +85,59 @@ Show examples of documents you&rsquo;ve created
 
 </aside>
 </section>
-<section id="slide-orgda725bf">
-<h3 id="orgda725bf">Documents you can create</h3>
+<section>
+<p>
+Try \(\LaTeX\) <a href="https://latexbase.com/">here</a>
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="tex" >\documentclass{article}
+\usepackage{amsmath,amsthm,amssymb}
+\begin{document}
+  $2+2=6$
+  $\int^5_12x+2\;dx$
+\end{document}
+</code></pre>
+</div>
+
+<p>
+Which produces the following:
+\[
+2+2=6 \\
+\int^5_12x+2\;dx
+\]
+</p>
+</section>
+<section id="slide-org6efe9be">
+<h3 id="org6efe9be">Challenge</h3>
+<p>
+Imitate this
+\[
+\exists \; k \in \mathbb{Z} \ni b = ak
+\]
+</p>
+
+<p>
+<a href="http://tug.ctan.org/info/undergradmath/undergradmath.pdf">LaTeX cheat sheet</a>
+</p>
+</section>
+<section id="slide-orgded3665">
+<h3 id="orgded3665">Documents you can create</h3>
 <ul>
 <li class="fragment appear">Resumes</li>
-<li class="fragment appear">Reports</li>
-<li class="fragment appear">Math proofs</li>
+<li class="fragment appear">Research papers</li>
+<li class="fragment appear">Thesis</li>
+<li class="fragment appear">Dreaded math tests</li>
 
 </ul>
 </section>
-<section>
-
-<div id="org80e2a2a" class="figure">
-<p><img src="./Screenshot 2023-11-03 at 11.38.09 AM.jpg" alt="Screenshot 2023-11-03 at 11.38.09 AM.jpg" />
-</p>
-</div>
-</section>
 </section>
 <section>
-<section id="slide-org3b90c2c">
-<h2 id="org3b90c2c">Typst</h2>
+<section id="slide-orgd268587">
+<h2 id="orgd268587">Typst</h2>
 <p>
-A modern alternative to \(\LaTeX\)
+A modern alternative to \(\LaTeX\) that has a less steeper learning curve
 </p>
 
 <aside class="notes">
@@ -119,13 +150,13 @@ Also show the source code of each to compare the syntax
 </section>
 </section>
 <section>
-<section id="slide-org757fa47">
-<h2 id="org757fa47">Markdown</h2>
-<div class="outline-text-2" id="text-org757fa47">
+<section id="slide-org092b301">
+<h2 id="org092b301">Markdown</h2>
+<div class="outline-text-2" id="text-org092b301">
 </div>
 </section>
-<section id="slide-orge2993e4">
-<h3 id="orge2993e4">Popular applications that use Markdown</h3>
+<section id="slide-org9ff5d9d">
+<h3 id="org9ff5d9d">Popular applications that use Markdown</h3>
 <ul>
 <li>Reddit</li>
 <li>Obsidian</li>
@@ -134,14 +165,14 @@ Also show the source code of each to compare the syntax
 
 </ul>
 </section>
-<section id="slide-org08168df">
-<h3 id="org08168df">Reddit</h3>
+<section id="slide-orge829800">
+<h3 id="orge829800">Reddit</h3>
 <p>
 Reddit has its own <a href="https://www.reddit.com/wiki/markdown/">flavor</a> of Markdown
 </p>
 </section>
-<section id="slide-org9af4d4e">
-<h3 id="org9af4d4e">Discord</h3>
+<section id="slide-org9da4635">
+<h3 id="org9da4635">Discord</h3>
 <p>
 Discord supports some markdown
 </p>
@@ -170,10 +201,13 @@ def _<sub>hash</sub>_<sub>(self)</sub>:
 
 </aside>
 </section>
-<section id="slide-orgeea3e26">
-<h3 id="orgeea3e26">Spicing up your Github profile</h3>
+<section id="slide-org463fb78">
+<h3 id="org463fb78">Spicing up your Github profile</h3>
+<p>
+<a href="https://www.markdownguide.org/cheat-sheet/">Cheat sheet</a>
+</p>
 <ol>
-<li>Create a repository and name it as your</li>
+<li>Create a repository and name it as your account name</li>
 <li>Create and edit README.md within the repository</li>
 
 </ol>
@@ -181,6 +215,15 @@ def _<sub>hash</sub>_<sub>(self)</sub>:
 <p>
 There&rsquo;s no need to commit the changes. You can simply preview the changes
 </p>
+</section>
+<section id="slide-org1e0e273">
+<h4 id="org1e0e273">Extra resources</h4>
+<ul>
+<li>Cool additions: <a href="https://github-readme-stats.vercel.app/api?username=curlyLasagna">Github Stats</a></li>
+<li>Cool icons: <a href="https://icons8.com/icons">icon8</a></li>
+<li>Gifs: <a href="https://giphy.com/">giphy</a></li>
+
+</ul>
 </section>
 </section>
 </div>

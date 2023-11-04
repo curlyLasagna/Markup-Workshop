@@ -34,24 +34,56 @@ Ask if people have had to write their assignments in LaTeX or are taking classes
 #+end_notes
 
 * $\LaTeX$
++ High usage in Academia
++ Defacto standard for research documents as it looks professional
++ One of the most advanced math typsetting system
 
-Try [[https://www.overleaf.com/][Latex]] via Overleaf
-
-Many university professors use $\LaTeX$
 #+begin_notes
 Ask if anyone has had to write LaTeX and their experience doing so
 Show examples of documents you've created
 #+end_notes
+#+REVEAL: split
+Try $\LaTeX$ [[https://latexbase.com/][here]]
+
+#+begin_src tex
+\documentclass{article}
+\usepackage{amsmath,amsthm,amssymb}
+\begin{document}
+  $2+2=6$
+  $\int^5_12x+2\;dx$
+\end{document}
+#+end_src
+
+Which produces the following:
+\[
+2+2=6 \\
+\int^5_12x+2\;dx
+\]
+
+
+** Challenge
+Imitate this
+\[
+\exists \; k \in \mathbb{Z} \ni b = ak
+\]
+
+[[http://tug.ctan.org/info/undergradmath/undergradmath.pdf][LaTeX cheat sheet]]
+
 ** Documents you can create
 #+ATTR_REVEAL: :frag (appear)
 + Resumes
-+ Reports
-+ Math proofs
-#+REVEAL: split
-[[./img/Screenshot 2023-11-03 at 11.38.09 AM.jpg]]
++ Research papers
++ Thesis
++ Dreaded math tests
+
+# ** My resume written in LaTeX
+# #+REVEAL_HTML: <img class="stretch" src="./img/Screenshot 2023-11-03 at 11.38.09 AM.jpg"
+
+# ** A practice test I made for Calc 2
+# #+REVEAL_HTML: <img class="r-bstretch" src="./img/Screenshot 2023-11-04 at 12.55.33 PM.jpg"
 
 * Typst
-A modern alternative to $\LaTeX$
+A modern alternative to $\LaTeX$ that has a less steeper learning curve
 
 #+begin_notes
 Do a side by side comparison of a Typst document and a LaTeX one
@@ -59,6 +91,7 @@ Also show the source code of each to compare the syntax
 #+end_notes
 
 * Markdown
+
 ** Popular applications that use Markdown
 + Reddit
 + Obsidian
@@ -86,8 +119,15 @@ def __hash__(self):
 ```
 > I can't code
 #+end_notes
+
 ** Spicing up your Github profile
-1. Create a repository and name it as your
+[[https://www.markdownguide.org/cheat-sheet/][Cheat sheet]]
+1. Create a repository and name it as your account name
 2. Create and edit README.md within the repository
 
 There's no need to commit the changes. You can simply preview the changes
+
+*** Extra resources
++ Cool additions: [[https://github-readme-stats.vercel.app/api?username=curlyLasagna][Github Stats]]
++ Cool icons: [[https://icons8.com/icons][icon8]]
++ Gifs: [[https://giphy.com/][giphy]]
