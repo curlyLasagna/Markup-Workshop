@@ -3,22 +3,36 @@
 #+REVEAL_REVEAL_JS_VERSION: 4
 #+REVEAL_PLUGINS: (notes highlight zoom)
 #+REVEAL_THEME: league
+#+REVEAL_TRANS: linear
 :END:
 #+OPTIONS: toc:nil num:nil timestamp:nil author:nil
 #+author: Luis Gascon
 #+title: Markup Languages: Power of Plain Text
 
+* Requirements
+Browser, internet connection
 * What are markup languages?
 According to Wikipedia:
 #+begin_quote
 Set of symbols inserted in a text document to control its structure, formatting...
 #+end_quote
 #+REVEAL: split
-Markup languages allows you to focus more on the content instead of the visual design
-
-Designing markup languages can be delegated
-
-Essentially, a consistent layout
+#+begin_src html
+<h1>I am biggest text</h1>
+<h2>I am medium text</h2>
+<h3>I am smaller text</h3>
+<p>I am smallest text</p>
+#+end_src
+#+begin_export html
+<h1>I am biggest text</h1>
+<h2>I am medium text</h2>
+<h3>I am smaller text</h3>
+<p>I am smallest text</p>
+#+end_export
+** Advantage of markup languages
++ Markup languages allows you to focus more on the content instead of the visual design
++ Separates the concern of visual and layout
++ Results in consistent layout
 
 ** Why do I use markup languages?
 + MS Word is painful to use
@@ -80,7 +94,7 @@ The above document produces the following:
 \]
 
 ** Challenge
-Generate this output on your own
+Generate this output
 \[
 \exists \; k \in \mathbb{Z} \text{ such that } b = ak
 \]
@@ -113,12 +127,16 @@ Has great documentation
 ** Compared to LaTeX
 Intuitive syntax
 #+begin_src tex
-\begin{enumerate}[label=(\alph*)]
-  \item $\alpha$
-  \item $1 - \alpha$
-  \item $1-2\alpha$
-  \item $2 - 2 \alpha$
-\end{enumerate}
+\documentclass{article}
+\usepackage{enumitem}
+\begin{document}
+    \begin{enumerate}[label=(\alph*)]
+      \item $\alpha$
+      \item $1 - \alpha$
+      \item $1-2\alpha$
+      \item $2 - 2 \alpha$
+    \end{enumerate}
+\end{document}
 #+end_src
 
 #+begin_src C
@@ -129,6 +147,10 @@ Intuitive syntax
 + $2 - 2 alpha$
 #+end_src
 #+REVEAL: split
+Both outputs
+
+[[./img/Screenshot 2023-11-05 at 6.14.39 PM.jpg]]
+#+REVEAL: split
 Error messages that humans can understand
 #+BEGIN_EXPORT html
 <img width="45%" src="https://i.stack.imgur.com/6yADg.png">
@@ -136,12 +158,12 @@ Error messages that humans can understand
 #+END_EXPORT
 
 ** But..
-Typst is still very young and does not have the same features as $\LaTeX$
+Typst is still very young and doesn't have the same features as $\LaTeX$
 
 You'll have to write your own functions that $\LaTeX$ would have as packages or wait for someone to make it
 
 ** Known uses
-Anything you can make in $\LaTeX$, you can make in Typst
+*Almost* anything you can make in $\LaTeX$, you can make in Typst
 
 ** Getting started with Typst
 You can try Typst [[https://typst.app/][here]]
@@ -203,7 +225,9 @@ def __hash__(self):
 ** LaTeX in Markdown??
 Some markdown processors include a math mode for you to render equations using $\LaTeX$
 
-Obsidian supports $LaTeX$ rendering out of the box
+Obsidian supports $\LaTeX$ rendering out of the box
+
+Try it out [[https://stackedit.io/app#][here]]
 ** What I've created with Markdown
 [[https://curlylasagna.github.io/OTS-Student-Documentation/]]
 
@@ -216,8 +240,13 @@ Documentation for stuff I do at work
 
 There's no need to commit the changes. You can simply preview the changes
 
+#+begin_notes
+Example https://github.com/kittinan
+#+end_notes
+
 *** Extras you can add to your profiles
 + [[https://socialify.git.ci/curlyLasagna/curlyLasagna?description=1&font=Source%20Code%20Pro&name=1&pattern=Solid&theme=Dark][Socialify]]
 + [[https://github-readme-stats.vercel.app/api?username=curlyLasagna][Github Stats]]
 + [[https://icons8.com/icons][icon8]]
 + [[https://giphy.com/][giphy]]
++ [[https://github.com/kittinan/spotify-github-profile][Spotify]]
