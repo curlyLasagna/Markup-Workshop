@@ -20,8 +20,8 @@
 <h1 class="title">Markup Languages: Power of Plain Text</h1>
 </section>
 <section>
-<section id="slide-orgfdfa6e7">
-<h2 id="orgfdfa6e7">What are markup languages?</h2>
+<section id="slide-orgb25d74a">
+<h2 id="orgb25d74a">What are markup languages?</h2>
 <p>
 According to Wikipedia:
 </p>
@@ -33,12 +33,34 @@ Set of symbols inserted in a text document to control its structure, formatting&
 </section>
 <section>
 <p>
-Markup languages allows you to focus more on the content instead of the design
+Markup languages allows you to focus more on the content instead of the visual design
 </p>
 
 <p>
-Design can be delegated by a different process
+Designing markup languages can be delegated
 </p>
+
+<p>
+Essentially, a consistent layout
+</p>
+</section>
+<section id="slide-orgc09d73b">
+<h3 id="orgc09d73b">Why do I use markup languages?</h3>
+<ul>
+<li>MS Word is painful to use</li>
+<li>The ability to use different editors</li>
+<li>It&rsquo;s text, so you can version control it</li>
+
+</ul>
+</section>
+<section id="slide-org9c9eb06">
+<h3 id="org9c9eb06">What I don&rsquo;t use markup languages for</h3>
+<ul>
+<li>Collaborating documents with others</li>
+<li>Short documents that do not require much formatting</li>
+
+</ul>
+
 <aside class="notes">
 <p>
 Ask if they can name examples of markup languages
@@ -48,8 +70,8 @@ Ask if they can name examples of markup languages
 </section>
 </section>
 <section>
-<section id="slide-org17aae65">
-<h2 id="org17aae65">Popular markup languages</h2>
+<section id="slide-org8894a1f">
+<h2 id="org8894a1f">Popular markup languages</h2>
 <ul>
 <li class="fragment appear">Markdown</li>
 <li class="fragment appear">HTML</li>
@@ -60,7 +82,8 @@ Ask if they can name examples of markup languages
 
 <aside class="notes">
 <p>
-This slide is written with Org, but I don&rsquo;t recommend it since it&rsquo;s not usually outside of Emacs.
+This slide is written in Org, but it&rsquo;s not as popular, so I&rsquo;m not going to take time to talk about it.
+In case they&rsquo;re interested, plug <a href="https://github.com/curlyLasagna/Markup-Workshop">https://github.com/curlyLasagna/Markup-Workshop</a>
 Ask if people have had to write their assignments in LaTeX or are taking classes for it
 </p>
 
@@ -68,19 +91,19 @@ Ask if people have had to write their assignments in LaTeX or are taking classes
 </section>
 </section>
 <section>
-<section id="slide-orge0a5719">
-<h2 id="orge0a5719">\(\LaTeX\)</h2>
+<section id="slide-orgdbdbcb1">
+<h2 id="orgdbdbcb1">LaTeX</h2>
 <ul>
-<li>High usage in Academia</li>
-<li>Defacto standard for research documents as it looks professional</li>
-<li>One of the most advanced math typsetting system</li>
+<li>Loved by Academia</li>
+<li>Defacto standard for research documents since it looks professional</li>
+<li>Has one of the most advanced math typesetting system</li>
 
 </ul>
 
 <aside class="notes">
 <p>
-Ask if anyone has had to write LaTeX and their experience doing so
-Show examples of documents you&rsquo;ve created
+Ask if anyone has had to write LaTeX and what their experience was in doing so
+Typesetting is the formal process of standardizing text so that it&rsquo;s readable and legible
 </p>
 
 </aside>
@@ -95,84 +118,196 @@ Try \(\LaTeX\) <a href="https://latexbase.com/">here</a>
 <pre><code class="tex" >\documentclass{article}
 \usepackage{amsmath,amsthm,amssymb}
 \begin{document}
-  $2+2=6$
+  $2+2=6$ \text{ is not correct}\\
   $\int^5_12x+2\;dx$
 \end{document}
 </code></pre>
 </div>
 
+<aside class="notes">
 <p>
-Which produces the following:
+Breakdown the different syntax of LaTeX
+Disregard the boilerplate stuff
+</p>
+
+</aside>
+
+<p>
+The above document produces the following:
 \[
-2+2=6 \\
+2+2=6 \text{ is not correct} \\
 \int^5_12x+2\;dx
 \]
 </p>
 </section>
-<section id="slide-org6efe9be">
-<h3 id="org6efe9be">Challenge</h3>
+<section id="slide-orgb0e78b6">
+<h3 id="orgb0e78b6">Challenge</h3>
 <p>
-Imitate this
+Generate this output on your own
 \[
-\exists \; k \in \mathbb{Z} \ni b = ak
+\exists \; k \in \mathbb{Z} \text{ such that } b = ak
 \]
 </p>
 
 <p>
-<a href="http://tug.ctan.org/info/undergradmath/undergradmath.pdf">LaTeX cheat sheet</a>
+<a href="http://tug.ctan.org/info/undergradmath/undergradmath.pdf">LaTeX cheat sheet</a> for math symbols
 </p>
 </section>
-<section id="slide-orgded3665">
-<h3 id="orgded3665">Documents you can create</h3>
+<section id="slide-orgb7d89ca">
+<h3 id="orgb7d89ca">Known uses</h3>
 <ul>
 <li class="fragment appear">Resumes</li>
 <li class="fragment appear">Research papers</li>
 <li class="fragment appear">Thesis</li>
+<li class="fragment appear">Textbooks</li>
 <li class="fragment appear">Dreaded math tests</li>
 
 </ul>
 </section>
+<section id="slide-orge7373c9">
+<h3 id="orge7373c9">My resume written in LaTeX</h3>
+<img class="stretch" src="./img/Screenshot 2023-11-03 at 11.38.09 AM.jpg">
+</section>
+<section id="slide-org1262529">
+<h3 id="org1262529">A practice test I made for Calc 2</h3>
+<img class="stretch" src="./img/Screenshot 2023-11-04 at 12.55.33 PM.jpg">
+</section>
 </section>
 <section>
-<section id="slide-orgd268587">
-<h2 id="orgd268587">Typst</h2>
+<section id="slide-orgacfeaa2">
+<h2 id="orgacfeaa2">Typst</h2>
 <p>
-A modern alternative to \(\LaTeX\) that has a less steeper learning curve
+An attempt of creating a modern alternative to \(\LaTeX\) that has a less steeper learning curve
+</p>
+
+<p>
+Has great documentation
+</p>
+</section>
+<section id="slide-org0dc68ce">
+<h3 id="org0dc68ce">Compared to LaTeX</h3>
+<p>
+Intuitive syntax
+</p>
+<div class="org-src-container">
+
+<pre><code class="tex" >\begin{enumerate}[label=(\alph*)]
+  \item $\alpha$
+  \item $1 - \alpha$
+  \item $1-2\alpha$
+  \item $2 - 2 \alpha$
+\end{enumerate}
+</code></pre>
+</div>
+
+<div class="org-src-container">
+
+<pre><code class="C" >#set enum(numbering: "(a)")
++ $alpha$
++ $1 - alpha$
++ $1 - 2 alpha$
++ $2 - 2 alpha$
+</code></pre>
+</div>
+</section>
+<section>
+<p>
+Error messages that humans can understand
+</p>
+<img width="45%" src="https://i.stack.imgur.com/6yADg.png">
+<img width="45%" src="./img/Screenshot 2023-11-05 at 12.23.41 AM.jpg">
+</section>
+<section id="slide-org2c390b0">
+<h3 id="org2c390b0">But..</h3>
+<p>
+Typst is still very young and does not have the same features as \(\LaTeX\)
+</p>
+
+<p>
+You&rsquo;ll have to write your own functions that \(\LaTeX\) would have as packages or wait for someone to make it
+</p>
+</section>
+<section id="slide-org068c1d7">
+<h3 id="org068c1d7">Known uses</h3>
+<p>
+Anything you can make in \(\LaTeX\), you can make in Typst
+</p>
+</section>
+<section id="slide-org786bcc5">
+<h3 id="org786bcc5">Getting started with Typst</h3>
+<p>
+You can try Typst <a href="https://typst.app/">here</a>
+</p>
+</section>
+<section id="slide-orgbaae60d">
+<h3 id="orgbaae60d">Challenge</h3>
+<p>
+Write a function that prints your first name red and your last name green
+</p>
+
+
+<div id="org526efc5" class="figure">
+<p><img src="./img/Screenshot 2023-11-05 at 10.12.27 AM.jpg" alt="Screenshot 2023-11-05 at 10.12.27 AM.jpg" />
+</p>
+</div>
+
+<p>
+<a href="https://typst.app/docs/tutorial/making-a-template/">Documentation</a> to help you out
 </p>
 
 <aside class="notes">
 <p>
-Do a side by side comparison of a Typst document and a LaTeX one
-Also show the source code of each to compare the syntax
+#let foo(fName, lName) = {
+    text(red)[#fName #text(green)[#lName]]
+}
 </p>
 
 </aside>
 </section>
 </section>
 <section>
-<section id="slide-org092b301">
-<h2 id="org092b301">Markdown</h2>
-<div class="outline-text-2" id="text-org092b301">
-</div>
+<section id="slide-orga144b23">
+<h2 id="orga144b23">Markdown</h2>
+<blockquote>
+<p>
+&ldquo;to write using an easy-to-read and easy-to-write plain text format, optionally convert it to structurally valid XHTML (or HTML).&rdquo;
+</p>
+
+<p>
+&#x00ad; John Grubber
+</p>
+</blockquote>
 </section>
-<section id="slide-org9ff5d9d">
-<h3 id="org9ff5d9d">Popular applications that use Markdown</h3>
+<section id="slide-org50824cd">
+<h3 id="org50824cd">Popular applications that support Markdown</h3>
 <ul>
 <li>Reddit</li>
 <li>Obsidian</li>
 <li>Discord</li>
 <li>VsCode</li>
+<li>Microsoft Teams</li>
 
 </ul>
 </section>
-<section id="slide-orge829800">
-<h3 id="orge829800">Reddit</h3>
+<section id="slide-org686ef41">
+<h3 id="org686ef41">Endless possibilities</h3>
+<ul>
+<li>Websites
+<ul>
+<li>Jekyll</li>
+<li>Hugo</li>
+
+</ul></li>
+<li>Diagrams via Mermaid</li>
+
+</ul>
+
 <p>
-Reddit has its own <a href="https://www.reddit.com/wiki/markdown/">flavor</a> of Markdown
+Good for technical documentation
 </p>
 </section>
-<section id="slide-org9da4635">
-<h3 id="org9da4635">Discord</h3>
+<section id="slide-orge0347a9">
+<h3 id="orge0347a9">Discord</h3>
 <p>
 Discord supports some markdown
 </p>
@@ -196,19 +331,39 @@ def _<sub>lt</sub>_<sub>(self, other)</sub>:
 def _<sub>hash</sub>_<sub>(self)</sub>:
     return hash(self._<sub>repr</sub>_<sub>()</sub>)
 ```
-&gt; I can&rsquo;t code
+&gt; I love syntax highlighting
 </p>
 
 </aside>
 </section>
-<section id="slide-org463fb78">
-<h3 id="org463fb78">Spicing up your Github profile</h3>
+<section id="slide-org7a72734">
+<h3 id="org7a72734">LaTeX in Markdown??</h3>
+<p>
+Some markdown processors include a math mode for you to render equations using \(\LaTeX\)
+</p>
+
+<p>
+Obsidian supports \(LaTeX\) rendering out of the box
+</p>
+</section>
+<section id="slide-orgba2e829">
+<h3 id="orgba2e829">What I&rsquo;ve created with Markdown</h3>
+<p>
+<a href="https://curlylasagna.github.io/OTS-Student-Documentation/">https://curlylasagna.github.io/OTS-Student-Documentation/</a>
+</p>
+
+<p>
+Documentation for stuff I do at work
+</p>
+</section>
+<section id="slide-org5e1ccc7">
+<h3 id="org5e1ccc7">Spicing up your Github profile</h3>
 <p>
 <a href="https://www.markdownguide.org/cheat-sheet/">Cheat sheet</a>
 </p>
 <ol>
 <li>Create a repository and name it as your account name</li>
-<li>Create and edit README.md within the repository</li>
+<li>Create and edit README.md within the new repository</li>
 
 </ol>
 
@@ -216,12 +371,13 @@ def _<sub>hash</sub>_<sub>(self)</sub>:
 There&rsquo;s no need to commit the changes. You can simply preview the changes
 </p>
 </section>
-<section id="slide-org1e0e273">
-<h4 id="org1e0e273">Extra resources</h4>
+<section id="slide-org35a0af2">
+<h4 id="org35a0af2">Extras you can add to your profiles</h4>
 <ul>
-<li>Cool additions: <a href="https://github-readme-stats.vercel.app/api?username=curlyLasagna">Github Stats</a></li>
-<li>Cool icons: <a href="https://icons8.com/icons">icon8</a></li>
-<li>Gifs: <a href="https://giphy.com/">giphy</a></li>
+<li><a href="https://socialify.git.ci/curlyLasagna/curlyLasagna?description=1&amp;font=Source%20Code%20Pro&amp;name=1&amp;pattern=Solid&amp;theme=Dark">Socialify</a></li>
+<li><a href="https://github-readme-stats.vercel.app/api?username=curlyLasagna">Github Stats</a></li>
+<li><a href="https://icons8.com/icons">icon8</a></li>
+<li><a href="https://giphy.com/">giphy</a></li>
 
 </ul>
 </section>
