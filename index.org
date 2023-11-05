@@ -14,9 +14,22 @@ According to Wikipedia:
 Set of symbols inserted in a text document to control its structure, formatting...
 #+end_quote
 #+REVEAL: split
-Markup languages allows you to focus more on the content instead of the design
+Markup languages allows you to focus more on the content instead of the visual design
 
-Design can be delegated by a different process
+Designing markup languages can be delegated
+
+Essentially, a consistent layout
+
+** Why do I use markup languages?
++ MS Word is painful to use
++ The ability to use different editors
++ It's text, so you can version control it
++ If a document requires a lot of technical details
+
+** What I don't use markup languages for
++ Collaborating documents with others
++ Short documents that do not require much formatting
+
 #+begin_notes
 Ask if they can name examples of markup languages
 #+end_notes
@@ -29,18 +42,19 @@ Ask if they can name examples of markup languages
 - [[https://typst.app/][Typst]]
 
 #+begin_notes
-This slide is written with Org, but I don't recommend it since it's not usually outside of Emacs.
+This slide is written in Org, but it's not as popular, so I'm not going to take time to talk about it.
+In case they're interested, plug https://github.com/curlyLasagna/Markup-Workshop
 Ask if people have had to write their assignments in LaTeX or are taking classes for it
 #+end_notes
 
-* $\LaTeX$
-+ High usage in Academia
-+ Defacto standard for research documents as it looks professional
-+ One of the most advanced math typsetting system
+* LaTeX
++ Loved by Academia
++ Defacto standard for research documents since it looks professional
++ Has one of the most advanced math typesetting system
 
 #+begin_notes
-Ask if anyone has had to write LaTeX and their experience doing so
-Show examples of documents you've created
+Ask if anyone has had to write LaTeX and what their experience was in doing so
+Typesetting is the formal process of standardizing text so that it's readable and legible
 #+end_notes
 #+REVEAL: split
 Try $\LaTeX$ [[https://latexbase.com/][here]]
@@ -49,58 +63,124 @@ Try $\LaTeX$ [[https://latexbase.com/][here]]
 \documentclass{article}
 \usepackage{amsmath,amsthm,amssymb}
 \begin{document}
-  $2+2=6$
+  $2+2=6$ \text{ is not correct}\\
   $\int^5_12x+2\;dx$
 \end{document}
 #+end_src
 
-Which produces the following:
+#+begin_notes
+Breakdown the different syntax of LaTeX
+Disregard the boilerplate stuff
+#+end_notes
+
+The above document produces the following:
 \[
-2+2=6 \\
+2+2=6 \text{ is not correct} \\
 \int^5_12x+2\;dx
 \]
 
-
 ** Challenge
-Imitate this
+Generate this output on your own
 \[
-\exists \; k \in \mathbb{Z} \ni b = ak
+\exists \; k \in \mathbb{Z} \text{ such that } b = ak
 \]
 
-[[http://tug.ctan.org/info/undergradmath/undergradmath.pdf][LaTeX cheat sheet]]
+[[http://tug.ctan.org/info/undergradmath/undergradmath.pdf][LaTeX cheat sheet]] for math symbols
 
-** Documents you can create
+** Known uses
 #+ATTR_REVEAL: :frag (appear)
 + Resumes
 + Research papers
 + Thesis
++ Textbooks
 + Dreaded math tests
 
-# ** My resume written in LaTeX
+** My resume written in LaTeX
 # #+REVEAL_HTML: <img class="stretch" src="./img/Screenshot 2023-11-03 at 11.38.09 AM.jpg"
-
-# ** A practice test I made for Calc 2
-# #+REVEAL_HTML: <img class="r-bstretch" src="./img/Screenshot 2023-11-04 at 12.55.33 PM.jpg"
+#+BEGIN_EXPORT html
+<img class="stretch" src="./img/Screenshot 2023-11-03 at 11.38.09 AM.jpg">
+#+END_EXPORT
+** A practice test I made for Calc 2
+#+BEGIN_EXPORT html
+<img class="stretch" src="./img/Screenshot 2023-11-04 at 12.55.33 PM.jpg">
+#+END_EXPORT
 
 * Typst
-A modern alternative to $\LaTeX$ that has a less steeper learning curve
+An attempt of creating a modern alternative to $\LaTeX$ that has a less steeper learning curve
+
+Has great documentation
+
+** Compared to LaTeX
+Intuitive syntax
+#+begin_src tex
+\begin{enumerate}[label=(\alph*)]
+  \item $\alpha$
+  \item $1 - \alpha$
+  \item $1-2\alpha$
+  \item $2 - 2 \alpha$
+\end{enumerate}
+#+end_src
+
+#+begin_src C
+#set enum(numbering: "(a)")
++ $alpha$
++ $1 - alpha$
++ $1 - 2 alpha$
++ $2 - 2 alpha$
+#+end_src
+#+REVEAL: split
+Error messages that humans can understand
+#+BEGIN_EXPORT html
+<img width="45%" src="https://i.stack.imgur.com/6yADg.png">
+<img width="45%" src="./img/Screenshot 2023-11-05 at 12.23.41 AM.jpg">
+#+END_EXPORT
+
+** But..
+Typst is still very young and does not have the same features as $\LaTeX$
+
+You'll have to write your own functions that $\LaTeX$ would have as packages or wait for someone to make it
+
+** Known uses
+Anything you can make in $\LaTeX$, you can make in Typst
+
+** Getting started with Typst
+You can try Typst [[https://typst.app/][here]]
+
+** Challenge
+Write a function that prints your first name red and your last name green
+
+[[./img/Screenshot 2023-11-05 at 10.12.27 AM.jpg]]
+
+[[https://typst.app/docs/tutorial/making-a-template/][Documentation]] to help you out
 
 #+begin_notes
-Do a side by side comparison of a Typst document and a LaTeX one
-Also show the source code of each to compare the syntax
+#let foo(fName, lName) = {
+    text(red)[#fName #text(green)[#lName]]
+}
 #+end_notes
 
 * Markdown
 
-** Popular applications that use Markdown
+#+begin_quote
+"to write using an easy-to-read and easy-to-write plain text format, optionally convert it to structurally valid XHTML (or HTML)."
+
+\- John Grubber
+#+end_quote
+
+** Popular applications that support Markdown
 + Reddit
 + Obsidian
 + Discord
 + VsCode
++ Microsoft Teams
 
-** Reddit
-Reddit has its own [[https://www.reddit.com/wiki/markdown/][flavor]] of Markdown
+** Endless possibilities
++ Websites
+  + Jekyll
+  + Hugo
++ Diagrams via Mermaid
 
+Good for technical documentation
 ** Discord
 Discord supports some markdown
 #+begin_notes
@@ -117,17 +197,27 @@ def __lt__(self, other):
 def __hash__(self):
     return hash(self.__repr__())
 ```
-> I can't code
+> I love syntax highlighting
 #+end_notes
+
+** LaTeX in Markdown??
+Some markdown processors include a math mode for you to render equations using $\LaTeX$
+
+Obsidian supports $LaTeX$ rendering out of the box
+** What I've created with Markdown
+[[https://curlylasagna.github.io/OTS-Student-Documentation/]]
+
+Documentation for stuff I do at work
 
 ** Spicing up your Github profile
 [[https://www.markdownguide.org/cheat-sheet/][Cheat sheet]]
 1. Create a repository and name it as your account name
-2. Create and edit README.md within the repository
+2. Create and edit README.md within the new repository
 
 There's no need to commit the changes. You can simply preview the changes
 
-*** Extra resources
-+ Cool additions: [[https://github-readme-stats.vercel.app/api?username=curlyLasagna][Github Stats]]
-+ Cool icons: [[https://icons8.com/icons][icon8]]
-+ Gifs: [[https://giphy.com/][giphy]]
+*** Extras you can add to your profiles
++ [[https://socialify.git.ci/curlyLasagna/curlyLasagna?description=1&font=Source%20Code%20Pro&name=1&pattern=Solid&theme=Dark][Socialify]]
++ [[https://github-readme-stats.vercel.app/api?username=curlyLasagna][Github Stats]]
++ [[https://icons8.com/icons][icon8]]
++ [[https://giphy.com/][giphy]]
