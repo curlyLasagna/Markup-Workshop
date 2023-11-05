@@ -63,7 +63,7 @@ Try $\LaTeX$ [[https://latexbase.com/][here]]
 \documentclass{article}
 \usepackage{amsmath,amsthm,amssymb}
 \begin{document}
-  $2+2=6$ \text{ is not correct}\\
+  $2+2=6$ is not correct\\
   $\int^5_12x+2\;dx$
 \end{document}
 #+end_src
