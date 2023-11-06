@@ -35,10 +35,10 @@ Set of symbols inserted in a text document to control its structure, formatting.
 + Results in consistent layout
 
 ** Why do I use markup languages?
-+ MS Word is painful to use
++ MS Word is painful to use for certain documents
 + The ability to use different editors
 + It's text, so you can version control it
-+ If a document requires a lot of technical details
++ If a document requires a lot of technical symbols
 
 ** What I don't use markup languages for
 + Collaborating documents with others
@@ -124,6 +124,18 @@ An attempt of creating a modern alternative to $\LaTeX$ that has a less steeper 
 
 Has great documentation
 
+** Syntax
+#+begin_src typst
+= Equivalent to <h1>
+== Equivalent to <h2>
+$x+2x=3x$ is math
+#foo(a, b) is a function call
+#image(image link) to insert an image
+``` java
+Insert code
+```
+#+end_src
+
 ** Compared to LaTeX
 Intuitive syntax
 #+begin_src tex
@@ -162,6 +174,8 @@ Typst is still very young and doesn't have the same features as $\LaTeX$
 
 You'll have to write your own functions that $\LaTeX$ would have as packages or wait for someone to make it
 
+It's open source. Link to their Github [[https://github.com/typst/typst][repository]]
+
 ** Known uses
 *Almost* anything you can make in $\LaTeX$, you can make in Typst
 
@@ -189,6 +203,15 @@ Write a function that prints your first name red and your last name green
 \- John Grubber
 #+end_quote
 
+** Syntax
+#+begin_src markdown
+# equivalent to <h1>
+## equivalent to <h2>
+![](image link) to insert an image
+``` java
+Insert code
+```
+#+end_src
 ** Popular applications that support Markdown
 + Reddit
 + Obsidian
